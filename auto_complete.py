@@ -298,6 +298,9 @@ class LIST_GUI():
         # shorten currently typed word by 1 char if not the empty string
         if str(event) == "Back" and len(self.__next_word) > 0:
             self.__next_word = self.__next_word[0: len(self.__next_word) - 1]
+        # switch to next mapping
+        elif str(event) == "Switch":
+            self.changeKeypad()
         # update word count of corresponding recommended word
         elif self.findWord(str(event), "rec")\
                 and self.__rec[int(str(event)[3: len(str(event))])] is not "":
@@ -307,9 +310,8 @@ class LIST_GUI():
             self.__next_word += str(event)
             self.searchDict()
         # update word count of user's currently typed word
-        elif str(event) == "Switch":
-            self.changeKeypad()
-        elif len(self.__next_word) > 0:
+        elif len(self.__next_word) > 0 and \
+            str(event) != "CapsLock":
             self.updateDict(self.__next_word)
 
     def testAutoCom(self, *args):

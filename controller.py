@@ -59,12 +59,13 @@ def KeyDownEvent(event):
         elif msg is 'Tab':
             k.type_string('\t')
         else:
+            msg = caps(msg)
             k.type_string(msg)
         app.auto_complete(msg)
         del k
         return False
-    elif event.Key == "Space" or event.Key == "Return" or \
-        event.Key == "Back":
+    elif event.Key == "Space" or \
+                    event.Key == "Return" or event.Key == "Back":
         app.auto_complete(msg)
         del k
         return True
