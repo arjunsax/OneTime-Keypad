@@ -1,0 +1,12 @@
+BRAD_PROFILE1 (One-Time-Keypad)
+720 720                             // GUI dimensions
+24 bold 4                           // text size, font style, number of buttons
+4 100                               // button height, button width
+0 0 0                               // num words, time, wpm
+apple 1                             // start of dict
+archery 1
+balloon 1
+branch 1
+break 1
+brunt 1
+cat 1                               // end of dict

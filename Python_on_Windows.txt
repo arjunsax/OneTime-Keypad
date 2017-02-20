@@ -1,0 +1,10 @@
+1. To install Python 3.5, visit http://www.activestate.com/activepython/downloads and download the corresponding python3.5 exe. Install follow the instruction. Should be easy.
+
+2. the modules we gonna use for controller part are pyHook, pythoncom and pyUserInput.
+	-pythoncom should be already be installed with the python 3.5 from activestate.
+	-pyHook: pip search pyhook to find the right name for that module, than do 
+	     pip install pyHook
+	-pyUserInput: almost the same as pyHook. pip search for the accurate name then do 
+		pip install
+
+3. follow the form that I push to git to import the modules I mentioned above. Also import any other module you need to realize your part of work
