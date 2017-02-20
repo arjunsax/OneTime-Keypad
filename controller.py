@@ -48,9 +48,9 @@ def KeyDownEvent(event):
     # create a keyboard object
     k = PyKeyboard()
     msg = str(event.Key)
-    # print(msg)
 
-    if event.Key in setting.keys_poss:
+    if event.Key in setting.keys_poss or \
+        event.Key in setting.keys_poss2:
         msg = setting.PAGES[setting.SWITCH][event.Key]
         if msg is 'Switch':
             setting.SWITCH = (setting.SWITCH + 1) % len(setting.PAGES)
@@ -63,47 +63,8 @@ def KeyDownEvent(event):
         app.auto_complete(msg)
         del k
         return False
-    elif event.Key in setting.keys_poss2:
-        msg = setting.PAGES[setting.SWITCH][event.Key]
-        if msg is 'Switch':
-            setting.SWITCH = (setting.SWITCH + 1) % len(setting.PAGES)
-        elif msg is 'CapsLock':
-            setting.CAPS = (setting.CAPS + 1) % 2
-        elif msg is 'Tab':
-            k.type_string('\t')
-        else:
-            k.type_string(msg)
-        app.auto_complete(msg)
-        del k
-        return False
-
-    if event.Key in setting.keys_poss:
-        msg = setting.PAGES[setting.SWITCH][event.Key]
-        if msg is 'Switch':
-            setting.SWITCH = (setting.SWITCH + 1) % len(setting.PAGES)
-        elif msg is 'CapsLock':
-            setting.CAPS = (setting.CAPS + 1) % 2
-        elif msg is 'Tab':
-            k.type_string('\t')
-        else:
-            k.type_string(msg)
-        app.auto_complete(msg)
-        del k
-        return False
-    elif event.Key in setting.keys_poss2:
-        msg = setting.PAGES[setting.SWITCH][event.Key]
-        if msg is 'Switch':
-            setting.SWITCH = (setting.SWITCH + 1) % len(setting.PAGES)
-        elif msg is 'CapsLock':
-            setting.CAPS = (setting.CAPS + 1) % 2
-        elif msg is 'Tab':
-            k.type_string('\t')
-        else:
-            k.type_string(msg)
-        app.auto_complete(msg)
-        del k
-        return False
-    elif event.Key == "Space":
+    elif event.Key == "Space" or event.Key == "Return" or \
+        event.Key == "Back":
         app.auto_complete(msg)
         del k
         return True
@@ -121,7 +82,6 @@ def KeyUpEvent(event):
     Return: the mapping symbol to both frontground app and GUI
     '''
     k = PyKeyboard()
-    msg = event.Key
     if event.Key in setting.keys_poss or event.Key in setting.keys_poss2:
         msg = setting.PAGES[setting.SWITCH][event.Key]
         # if msg is not 'switch_map' and not 'switch_cap' and not 'tab':

@@ -114,28 +114,13 @@ class LIST_GUI():
         self.__btns.append(tkinter.Button(
             self.__frames[3], text="Enter", font=self.__butFont))
         # packing the 'column 1' buttons
-        self.__btns[0].pack(fill="x")
-        self.__btns[3].pack(fill="x")
-        self.__btns[7].pack(fill="x")
-        self.__btns[11].pack(fill="x")
-        self.__btns[14].pack(fill="x")
+        self.packButtons([0, 3, 7, 11, 14])
         # packing the 'column 2' buttons
-        self.__btns[1].pack(fill="x")
-        self.__btns[4].pack(fill="x")
-        self.__btns[8].pack(fill="x")
-        self.__btns[12].pack(fill="x")
-        self.__btns[16].pack(fill="x")
+        self.packButtons([1, 4, 8, 12, 16])
         # packing the 'column 3' buttons
-        self.__btns[2].pack(fill="x")
-        self.__btns[5].pack(fill="x")
-        self.__btns[9].pack(fill="x")
-        self.__btns[13].pack(fill="x")
-        self.__btns[15].pack(fill="x")
+        self.packButtons([2, 5, 9, 13, 15])
         # packing the 'column 4' buttons
-        self.__btns[17].pack(fill="x")
-        self.__btns[6].pack(fill="x")
-        self.__btns[10].pack(fill="x")
-        self.__btns[18].pack(fill="x")
+        self.packButtons([17, 6, 10, 18])
         # filename storing current profile
         self.__profile = ""
         # gets filename of last used profile
@@ -203,6 +188,11 @@ class LIST_GUI():
                         setting.keys_poss2[idx]])
                 self.__btns[idx].pack()
                 idx += 1
+
+    # packs the buttons from num_list in a frame
+    def packButtons(self, num_list):
+        for num in num_list:
+            self.__btns[int(num)].pack(fill="x")
 
     # Removes all recommended words from the GUI buttons
     def clearList(self):
@@ -306,7 +296,7 @@ class LIST_GUI():
 
     def auto_complete(self, event):
         # shorten currently typed word by 1 char if not the empty string
-        if str(event) is "Back" and len(self.__next_word) > 0:
+        if str(event) == "Back" and len(self.__next_word) > 0:
             self.__next_word = self.__next_word[0: len(self.__next_word) - 1]
         # update word count of corresponding recommended word
         elif self.findWord(str(event), "rec")\
@@ -317,7 +307,7 @@ class LIST_GUI():
             self.__next_word += str(event)
             self.searchDict()
         # update word count of user's currently typed word
-        elif str(event) is "Switch":
+        elif str(event) == "Switch":
             self.changeKeypad()
         elif len(self.__next_word) > 0:
             self.updateDict(self.__next_word)

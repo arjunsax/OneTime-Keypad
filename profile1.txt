@@ -1,8 +1,6 @@
 BRAD_PROFILE1 (One-Time-Keypad)
-720 720
-24 bold 4
-4 100
-244 15.483333333333333 15.758880516684608
+4
+256 23.399999999999995 10.940170940170942
 apple 1
 archery 1
 balloon 1
@@ -22,7 +20,7 @@ spaceships 1
 striking 1
 from 3
 hidden 2
-base 3
+base 4
 have 2
 won 1
 their 2
@@ -40,7 +38,7 @@ managed 1
 to 8
 steal 1
 secret 2
-plans 2
+plans 3
 s 2
 ultimate 2
 weapon 2
@@ -159,3 +157,12 @@ small 1
 band 1
 rebels 1
 struggling 1
+badbad 1
+bedcad 1
+helmbad 1
+bad 2
+bb 1
+uu 1
+ps 1
+pllans 1
+plan 1
