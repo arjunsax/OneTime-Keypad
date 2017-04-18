@@ -1,0 +1,16 @@
+HOME SCREEN LAYOUT
+Column 0: An ordered list of map IDs
+Column 1: (optional): A preview of symbols in each map
+Column 2-5: the 23 'pressable' keys
+
+INSTRUCTIONS
+Press the Row2Col1 button ('|S|') to go to the next map.
+Hold the Row2Col1 button ('|S|') and select 1 of 6 'enabled'
+buttons to jump to the corresponding map.
+Press the Row2Col2 button ('Caps') to turn CapsLock on and off.
+(Note: The following four occur if the list
+of options is present in Row 1)
+Press the Row1Col1 button ('About') to get contact information
+Press the Row1Col2 button ('Help') to view this basic tutorial
+Press the Row1Col3 button ('Tools') to modify user profiles
+Press the Row1Col4 button ('Exit') to exit the app

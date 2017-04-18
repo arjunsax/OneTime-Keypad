@@ -1,10 +1,8 @@
-BRAD_PROFILE1 (One-Time-Keypad)     // Title of GUI
-4                                   // num rec words
-0 0 0                               // total words, total time, words/min
-apple 1                             // start of dictionary
-archery 1
-balloon 1
-branch 1
-break 1
-brunt 1
-cat 1                               // end of dictionary
+dict_profile1.txt                                // link to dictionary for this profile
+.99 14 3 8 white pink pink black white No        // transparency, preview font, btn height, btn width, flash, enabled key, map id, key, key text, show labels
+Switch CapsLock a e i b c d f g h j k l , .      // 1st mapping
+Switch CapsLock m q u n o p r s t v w x , .      // 2nd mapping
+Switch CapsLock y 3 + z 1 2 4 - = ( ) * ^ /      // 3rd mapping
+Switch CapsLock 5 9 + 6 7 8 0 - = ( ) * ^ /      // 4th mapping
+Switch CapsLock ` } ! [ ] { @ # $ % & _ | ?      // 5th mapping
+Switch CapsLock Tab < > ' " \ ~ ; : A B C D E    // 6th mapping

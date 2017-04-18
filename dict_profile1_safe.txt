@@ -1,0 +1,8 @@
+0 0 0                                               // total words, total time, words/min
+apple 1                                             // start of dictionary
+archery 1
+balloon 1
+branch 1
+break 1
+brunt 1
+cat 1                                               // end of dictionary

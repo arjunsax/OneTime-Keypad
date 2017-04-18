@@ -4,7 +4,7 @@ This is a quick tutorial on how to use the Alpha release of OTK and its included
 
 1. How to Run OTK
 a. Start by ensuring you have python 3.5 installed and added to your path variables
-b. Next run start.py in command line located in /path/to/OTK/start.py
+b. Next run start.py in command line located in /path/to/OTK/auto_complete.py
 c. This should start the process. Now type the keys on the keypad and see them appear in your application of choice.
 
 2. Included features

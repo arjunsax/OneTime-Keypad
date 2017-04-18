@@ -1,0 +1,8 @@
+dict_profile1.txt
+.99 14 3 8 white pink pink black white No
+|S| Caps a e i b c d f g h j k l , .
+|S| Caps m q u n o p r s t v w x , .
+|S| Caps y 3 + z 1 2 4 - = ( ) * ^ /
+|S| Caps 5 9 + 6 7 8 0 - = ( ) * ^ /
+|S| Caps ` } ! [ ] { @ # $ % & _ | ?
+|S| Caps Tab < > ' " \ ~ ; : A B C D E

@@ -1,0 +1,8 @@
+dict_profile2.txt
+.999 24 4 8 white pink white black white No
+|S| Caps a b c d e f g h i j k l m n
+|S| Caps a b c d e f g h i j k l m n
+|S| Caps a b c d e f g h i j k l m n
+|S| Caps a b c d e f g h i j k l m n
+|S| Caps a b c d e f g h i j k l m n
+|S| Caps a b c d e f g h i j k l m n
